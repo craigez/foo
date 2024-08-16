@@ -27,6 +27,6 @@ jobs:
           GH_REPO: ${{ github.repository }}
           COMMENT: >
                 👋 ${{ github.event.pull_request.user.login }}
-                 Thank you for raising your pull request.
-                 We do not accept pull requests on this branch. Please see our [README](${{ github.workspace }}/README.md)) and our [contributing guidelines](${{ github.workspace }}/CONTRIBUTING.md) for more details.
+                 Thank you for raising your pull request. We do not accept pull requests on this branch. 
+                 Please see our [README](${{ github.repository }}/blob/mainREADME.md) and our [contributing guidelines](${{ github.workspace }}/blob/main/CONTRIBUTING.md) for more details.
             
