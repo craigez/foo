@@ -25,8 +25,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.number}}
           GH_REPO: ${{ github.repository }}
+          README: ${{ github.workspace }}/README.md
+          CONTRIBUTING: ${{github.workspace}}/CONTRIBUTING.md
+          AUTHOR: ${{ github.event.pull_request.user.login }}
           COMMENT: >
-                👋 ${{ github.event.pull_request.user.login }}
+                👋 $AUTHOR
                  Thank you for raising your pull request.
-                 We do not accept pull requests on this branch. Please see our [README](README.md) and our [contributing guidelines](CONTRIBUTING.md) for more details.
+                 We do not accept pull requests on this branch. Please see our [README]($README) and our [contributing guidelines]($CONTRIBUTING) for more details.
             
